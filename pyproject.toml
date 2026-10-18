@@ -1,0 +1,37 @@
+[project]
+name = "osm-direction"
+version = "0.1.0"
+description = "Parse OpenStreetMap direction tags into clean bearings, with a verdict on how much to trust each one"
+readme = "README.md"
+authors = [
+    { name = "Kim Slawson" }
+]
+license = "MIT"
+license-files = ["LICENSE"]
+keywords = ["openstreetmap", "osm", "direction", "bearing", "surveillance", "alpr", "tags"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3",
+    "Topic :: Scientific/Engineering :: GIS",
+    "Typing :: Typed",
+]
+requires-python = ">=3.10"
+dependencies = []
+
+[project.urls]
+Repository = "https://github.com/kimslawson/osm-direction"
+Issues = "https://github.com/kimslawson/osm-direction/issues"
+
+[build-system]
+requires = ["uv_build>=0.11.2,<0.12.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "pytest>=9.1.1",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests", "src"]
+addopts = "--doctest-modules"
