@@ -4,7 +4,7 @@ version = "0.1.0"
 description = "Parse OpenStreetMap direction tags into clean bearings, with a verdict on how much to trust each one"
 readme = "README.md"
 authors = [
-    { name = "Kim Slawson" }
+    { name = "Kim Slawson", email = "kimslawson@gmail.com" }
 ]
 license = "MIT"
 license-files = ["LICENSE"]

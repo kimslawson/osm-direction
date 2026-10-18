@@ -66,7 +66,7 @@ This library still reports `0` as 0 degrees. It doesn't rewrite data, because re
 Flagged as suspected placeholders:
 
 - a numeric zero (`0`, `0.0`, `000`), alone or in a list
-- a range centered within 1 degree of north (`338-23`, which is how that editor writes an unset direction with a 45-degree field of view)
+- a range centered within 1 degree of north (`338-23`, which is how that editor wrote an unset direction with a 45-degree field of view, mostly in late 2025)
 
 Not flagged: `N` (typed on purpose), `360`, and `0-360` (all the way round).
 
